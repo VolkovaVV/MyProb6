@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="520dp">
+
+    <TextView
+        android:id="@+id/text_look_around"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp"
+        android:paddingRight="10dp"
+        android:scrollbars="vertical"
+        android:text="@string/in_basement"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_var"/>
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        >
+    <Button
+        android:id="@+id/btn_look_around_v1"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:paddingLeft="20dp"
+        android:text="@string/in_basement_v1"
+        android:background="@drawable/btn_var"
+        android:layout_above = "@id/btn_look_around_v2"
+        android:layout_marginBottom="10dp"
+            />
+    <Button
+        android:id="@+id/btn_look_around_v2"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/in_basement_v2"
+        android:background="@drawable/btn_var"
+        android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_lvl1_exit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentBottom = "true"
+        android:background="@drawable/btn_var"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_margin="18sp"
+        />
+</RelativeLayout>
